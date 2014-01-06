@@ -1,6 +1,6 @@
 # Angular matchMedia Module
 
-Provides an Angular service that returns true if the current screen width matches or false if not. Uses the screen widths from Twitter Bootstrap 3.
+Provides an Angular service that returns true if the current screen width matches or false if not. Uses the screen widths from Foundation 5.
 
 ## Installation
 
@@ -48,8 +48,8 @@ In your controller you can create variables that correspond to screen sizes. For
 ```javascript
 angular.module('myApp', ['matchMedia'])
 .controller('mainController', ['screenSize', function (screenSize) {
-  $scope.desktop = screenSize.is('md,lg');
-  $scope.mobile = screenSize.is('xs, sm');
+  $scope.desktop = screenSize.is('medium,large');
+  $scope.mobile = screenSize.is('small');
 }]);
 ```
 
