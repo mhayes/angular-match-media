@@ -1,7 +1,7 @@
 /*
  * Angular matchMedia Module
  * Version 0.2.0
- * Uses Bootstrap 3 breakpoint sizes
+ * Uses Foundation 5 breakpoint sizes
  * Exposes service "screenSize" which returns true if breakpoint(s) matches.
  * Includes matchMedia polyfill for backward compatibility.
  * Copyright © 2013-2014 Jack Tarantino.
@@ -73,10 +73,9 @@ angular.module('matchMedia', [])
   'use strict';
 
   var rules = {
-    lg : '(min-width: 1200px)',
-    md : '(min-width: 992px) and (max-width: 1199px)',
-    sm : '(min-width: 768px) and (max-width: 991px)',
-    xs : '(max-width: 767px)'
+    large : '(min-width:64.063em)',
+    medium : '(min-width:40.063em) and (max-width:64em)',
+    small : '(max-width: 40em)'
   };
 
   this.rules = rules;
